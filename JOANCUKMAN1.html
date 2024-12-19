@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pacman Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Home Page -->
+  <div id="home">
+    <h1>Pacman Game 🍴</h1>
+    <button id="start-game">Start Game</button>
+    <audio id="bg-music" loop>
+      <source src="Bruno_Mars_-_Treasure copy.mp3" type="audio/mpeg">
+    </audio>
+  </div>
+
+  <!-- Game Page -->
+  <div id="game-container" style="display: none;">
+    <div id="game-area">
+      <!-- Pacman -->
+      <div id="pacman">🦍</div>
+      <!-- Foods -->
+      <div class="food" style="top: 50px; left: 50px;">🍎</div>
+      <div class="food" style="top: 150px; left: 150px;">🍕</div>
+      <div class="food" style="top: 250px; left: 250px;">🍇</div>
+      <div class="food" style="top: 350px; left: 100px;">🍗</div>
+    </div>
+  </div>
+
+  <!-- End Page -->
+  <div id="game-over" style="display: none;">
+    <div class="message">
+      <h1>Congratulations!</h1>
+      <p>"Kalau makan nasi goreng ga lengkap tanpa adanya kerupuk, kalau Christmas gini ga lengkap tanpa hadirmu."</p>
+      <div id="fireworks">
+        <div class="firework"></div>
+        <div class="firework"></div>
+        <div class="firework"></div>
+      </div>
+      <button id="back-to-home">Back to Home</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
